@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #287C3E !important;
+}
