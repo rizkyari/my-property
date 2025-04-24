@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏠 My Property - Real Estate Landing & Feedback Platform
 
-## Getting Started
+**My Property** is a modern, responsive frontend application built to showcase a real estate platform landing page along with a customer feedback management system.
 
-First, run the development server:
+This project is designed to demonstrate clean architecture, UI/UX best practices, API integration, and modern frontend techniques using Next.js 14 and React ecosystem tools.
+
+This project is consist of:
+
+1. ✨ **Landing Page (Static)** 
+2. 📝 **Feedback System (Dynamic)** 
+
+---
+
+## 📦 Tech Stack
+
+- **Next.js 14 (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **Shadcn/ui**
+- **React Hook Form + Zod**
+- **Axios**
+- **React Query**
+
+---
+
+## ✨ Features
+
+### 🔹 Landing Page
+- Fully responsive and mobile-friendly
+- Pixel-perfect layout based on custom Figma design
+- Component-based structure for reusability
+- Swiper.js carousel integration for customer testimonials
+- Interactive FAQ section with accordion behavior
+
+### 🔹 Feedback System
+- Create new customer feedback with form validation
+- Upload multiple images with real-time preview
+- Search by unit or feedback content with debounce
+- Filter by status (`waiting`, `pending`, etc.)
+- Status badge with colored indicators
+- Skeleton loading for smoother UX
+- Fully integrated with external REST API
+
+---
+
+## 🌐 Pages Overview
+
+| URL Path       | Description                         |
+|----------------|-------------------------------------|
+| `/`            | Real estate landing page            |
+| `/feedback`    | Customer feedback submission & list |
+
+---
+
+## 🔧 Getting Started
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/my-property.git
+cd my-property
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔐 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Create a .env file and add:
+NEXT_PUBLIC_API_BASE=https://devtest.panglimapropertindo.id/api
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Folder Structure (Simplified)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+src/
+├── app/
+│   ├── page.tsx               # Landing page
+│   └── feedback/page.tsx      # Feedback feature
+├── components/                # UI Components
+├── hooks/                     # Custom hooks (e.g. useFeedbacks)
+├── lib/                       # API utilities, constants
+├── styles/                    # Global CSS
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧑‍🚀 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed by Rizky Ari
+
+[Linkedin](https://www.linkedin.com/in/rizkyarihar/) | [GitHub](https://github.com/rizkyari)
